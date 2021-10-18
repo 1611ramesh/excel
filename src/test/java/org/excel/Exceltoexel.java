@@ -19,15 +19,15 @@ import org.openqa.selenium.WebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Exceltoexel {
+apublic class Exceltoexel {
 
 	public static void main(String[] args) throws IOException {
 		WebDriverManager.chromedriver().setup();
-		File f = new File("C:\\Users\\1611r\\eclipse-workspace\\New\\testdata\\Book1.xlsx" );
-		File f2 = new File("C:\\Users\\1611r\\eclipse-workspace\\New\\testdata\\Book2.xlsx");
+		File f = new File("C:\\Users\\1611r\\eclipse-workspace\\excel\\testdata\\Book1.xlsx" );
+		File f2 = new File("C:\\Users\\1611r\\eclipse-workspace\\excel\\testdata\\Book2.xlsx");
 		FileInputStream fi = new FileInputStream(f);
 		FileInputStream fi2 = new FileInputStream(f2);
-		File f1 = new File("C:\\Users\\1611r\\Desktop\\framewwork\\xtox19.xlsx");
+		File f1 = new File("C:\\Users\\1611r\\Desktop\\framewwork\\xtox25.xlsx");
 		Workbook w1 = new XSSFWorkbook();
 		Workbook w2 = new XSSFWorkbook(fi2);
 		Sheet sheet2 = w2.getSheet("Sheet1");
